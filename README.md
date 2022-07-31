@@ -1,8 +1,6 @@
-# :phone: TuringTech - Frontend technical test (Intermediate)
+# :phone: TuringTech - Frontend Conversion Test
 
-This test is a part of our hiring process at TuringTech for the Frontend Engineer position. It should take you between 3 to 5 hours, depending on your experience, to implement the minimal version. But we thought about a few bonuses, so feel free to spend some time on them if you want.
-
-*Feel free to apply! Drop us a line with your LinkedIn/GitHub/Twitter at hr@turingtechnologies.org.*
+This test is a part of our hiring process at TuringTech for the Frontend Engineer position. It should take you between 3 to 5 hours, depending on your experience, to implement the minimal version. 
 
 ## Context
 
@@ -10,31 +8,17 @@ TuringTech is on a mission to revolutionize the business phone industry! This te
 
 ## Exercise
 
-The application can be built using any Frontend Framework/Library such as React, Angular, Vue. We do use React on most of our projects, however, Angular and Vue are also used in some of the projects.
+The application needs to be built using Next.js, TypeScript, GraphQL and Ant Design library. Copy Styling of different components such as buttons, lists, fields and loader from https://vercel.com/design
 
-For the purpose of this test please use Bootstrap for the base design library. Copy Styling of different components such as buttons, lists, fields and loader from https://vercel.com/design
-
-_NB: You can also build your own components from scratch instead of using bootstrap._
-
-This application must:
+This application MUST:
 - Display a paginated list of calls that you’ll retrieve from the API.
 - Display the call details view if the user clicks on a call. the view should display all the data related to the call itself.
 - Be able to archive one or several calls
 - Group calls by date
 - Handle real-time events (Whenever a call is archived or a note is being added to a call, these changes should be reflected on the UI immediately)
-
-Bonus:
-- Use Typescript
 - Provide filtering feature, to filter calls by type (archived, missed …)
-… and many others! Don’t be afraid to use new or unknown libraries, we’d love to learn new things!  
-
 
 **Important Note**: We want you to build this small app as you'd have done it for your current job. (UI, UX, tests, documentation matters).
-
-
-## APIs
-
-There are 2 versions of the APIs for this test, so you can choose between a REST API or a GraphQL API. Both expose the same data, so it’s really about which one you prefer.
 
 ### Model
 
@@ -337,10 +321,8 @@ Example
 
 ## Bonus
 
-- Use typescript
 - Deploy your app on Heroku or Netlify
 
 ## Code Submit
-Please organize, design, test and document your code as if it were going into production and send us a pull request. We will review it and get back to you in order to talk about your code! 
-
+Please organize, design, test and document your code as if it were going into production and send us a pull request.
 All the best and happy coding.
