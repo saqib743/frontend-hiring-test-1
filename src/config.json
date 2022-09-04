@@ -1,0 +1,9 @@
+{
+  "urls": {
+    "baseURL": "https://frontend-test-api.aircall.io",
+    "signIn": "/auth/login",
+    "authenticateAlreadySignedInUser": "/auth/refresh-token",
+    "calls": "/calls",
+    "note": "/note"
+  }
+}
