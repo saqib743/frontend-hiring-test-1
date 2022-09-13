@@ -12,11 +12,13 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
+  FormControl,
+  InputLabel,
   MenuItem,
   Modal,
-  Select,
   Snackbar,
 } from "@mui/material";
+import Select from "@mui/material/Select";
 import { formatDuration } from "../../services/date-formatter";
 function Main(props) {
   const { classes } = props;
@@ -113,23 +115,25 @@ function Main(props) {
       <div className={classes.row}>
         <div className={classes.header}>Turing Technologies Frontend Test</div>
       </div>
-      <div className={classes.row}>
-        Filter By{" "}
-        <Select
-          value={filterBy}
-          onChange={(e) => {
-            setFilterBy(e.target.value);
-          }}
-          size="small"
-        >
-          <MenuItem value={""}>All</MenuItem>
-          <MenuItem value={"archived"}>Archived</MenuItem>
-          <MenuItem value={"unArchived"}>Un Archived</MenuItem>
-        </Select>
+      <div className={classes.rowFlex}>
+        <div className={classes.filterByText}>Filter By</div>
+
+        <FormControl variant="standard" sx={{ m: 1, minWidth: 200 }}>
+          <Select
+            sx={{ color: "#2d5ce7" }}
+            disableUnderline
+            value={filterBy}
+            onChange={(e) => {
+              setFilterBy(e.target.value);
+            }}
+          >
+            <MenuItem value={""}>All</MenuItem>
+            <MenuItem value={"archived"}>Archived</MenuItem>
+            <MenuItem value={"unArchived"}>Un Archived</MenuItem>
+          </Select>
+        </FormControl>
       </div>
-      <div className={classes.row}>
-        <div className={classes.header}>Turing Technologies Frontend Test</div>
-      </div>
+
       <div className={classes.row}>
         <TableComponent
           calls={filteredCalls}

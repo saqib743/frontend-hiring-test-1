@@ -1,5 +1,5 @@
 const btn = {
-  backgroundColor: "purple",
+  backgroundColor: "#4f46f8",
   borderRadius: "5px",
   cursor: "pointer",
   width: "150px",
@@ -24,6 +24,15 @@ const styles = (theme) => ({
 
     width: "80%",
     margin: "10px 0px 10px 0px",
+  },
+  rowFlex: {
+    ...flexAlignJustifyCenter,
+    justifyContent: "flex-start",
+    width: "80%",
+    margin: "10px 0px 10px 0px",
+  },
+  filterByText: {
+    ...flexAlignJustifyCenter,
   },
   header: { fontSize: "20px" },
 

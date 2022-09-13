@@ -1,10 +1,11 @@
 const btn = {
-  backgroundColor: "purple",
-  borderRadius: "5px",
+  backgroundColor: "#4f46f8",
+  borderRadius: "2px",
   cursor: "pointer",
   width: "150px",
   padding: "5px 10px 5px 10px",
   color: "white",
+  textDecoration: "none",
 };
 const flexAlignJustifyCenter = {
   display: "flex",

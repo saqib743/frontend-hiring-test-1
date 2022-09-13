@@ -1,5 +1,5 @@
 const btn = {
-  backgroundColor: "purple",
+  backgroundColor: "#4f46f8",
   borderRadius: "5px",
   cursor: "pointer",
   width: "150px",

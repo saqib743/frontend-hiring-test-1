@@ -43,9 +43,9 @@ function TableComponent(props) {
 
   return (
     <div className={classes.container}>
-      <Table>
-        <TableHead>
-          <TableRow className={classes.darkRow}>
+      <Table className={classes.table}>
+        <TableHead className={classes.darkRow}>
+          <TableRow>
             <TableCell>CALL TYPE</TableCell>
             <TableCell>DIRECTION</TableCell>
             <TableCell>DURATION</TableCell>
@@ -109,6 +109,8 @@ function TableComponent(props) {
       <div className={classes.paginationContainer}>
         {" "}
         <Pagination
+          color="primary"
+          shape="rounded"
           count={Math.ceil(+totalCalls / 10)}
           onChange={(e, newPage) => {
             setSkip((newPage - 1) * 10);

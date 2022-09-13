@@ -15,7 +15,7 @@ function Banner(props) {
       {auth.loggedIn ? (
         <div className={classes.SignoutContainer}>
           <a href="/" className={classes.btn}>
-            Signout
+            Log out
           </a>
         </div>
       ) : (
